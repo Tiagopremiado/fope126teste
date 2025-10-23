@@ -2,9 +2,9 @@ import React from 'react';
 import type { CommandMember } from '../types';
 
 const commandStaff: CommandMember[] = [
-  { name: 'Major Silva', rank: 'Comandante da Companhia', imageUrl: 'https://picsum.photos/seed/cmd1/400/400' },
-  { name: 'Capitão Rocha', rank: 'Sub-Comandante', imageUrl: 'https://picsum.photos/seed/cmd2/400/400' },
-  { name: 'Sargento Lima', rank: 'Comandante de Pelotão', imageUrl: 'https://picsum.photos/seed/cmd3/400/400' },
+  { name: 'CMDT TAMIRES', rank: 'Comandante geral da companhia', imageUrl: 'https://i.imgur.com/PW9K1iE.jpeg' },
+  { name: 'CMDT TIAGO', rank: 'Comandante e instrutor da Companhia', imageUrl: 'https://i.imgur.com/9XehSu6.jpeg' },
+  { name: 'CMDT NACIONAL VINICIUS', rank: 'Comandante nacional da FOPE Brasil', imageUrl: 'https://i.imgur.com/HERvzgT.jpeg' },
 ];
 
 const CommandSection: React.FC = () => {
