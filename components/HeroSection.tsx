@@ -3,7 +3,7 @@ import React from 'react';
 const HeroSection: React.FC = () => {
   return (
     <section id="home" className="relative h-screen flex items-center justify-center text-center text-white">
-      <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center filter grayscale" style={{ backgroundImage: "url('https://picsum.photos/seed/fopehero/1920/1080')" }}></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-cover bg-center filter grayscale" style={{ backgroundImage: "url('https://i.imgur.com/o2npVba.jpeg')" }}></div>
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
       <div className="relative z-10 p-4">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-display uppercase tracking-wider font-bold mb-4 text-shadow-lg">
