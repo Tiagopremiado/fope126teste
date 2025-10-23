@@ -1,6 +1,10 @@
 import React from 'react';
 
 const ProjectsSection: React.FC = () => {
+  const phoneNumber = "5553991152051";
+  const message = "Olá! Vi o site da FOPE e gostaria de saber mais sobre o projeto FOPE FIRE – BRIGADISTA MIRIM e como participar.";
+  const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+
   return (
     <section id="projetos" className="py-20 bg-olive-dark">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -18,7 +22,7 @@ const ProjectsSection: React.FC = () => {
             <p className="leading-relaxed text-gray-300">
               Além do conhecimento técnico, o programa desenvolve coragem, responsabilidade e um profundo senso de serviço à comunidade, formando verdadeiros heróis do cotidiano.
             </p>
-            <a href="#contato" className="mt-8 inline-block border border-lime-volt text-lime-volt font-bold font-display uppercase tracking-wider py-3 px-8 rounded-sm hover:bg-lime-volt hover:text-black transition-colors duration-300">
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer" className="mt-8 inline-block border border-lime-volt text-lime-volt font-bold font-display uppercase tracking-wider py-3 px-8 rounded-sm hover:bg-lime-volt hover:text-black transition-colors duration-300">
               Participe
             </a>
           </div>

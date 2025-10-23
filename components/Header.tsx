@@ -5,6 +5,7 @@ const navLinks: NavLink[] = [
   { name: 'Quem Somos', href: '#quem-somos' },
   { name: 'Nossa Missão', href: '#missao' },
   { name: 'Atividades', href: '#atividades' },
+  { name: 'Benefícios', href: '#beneficios' },
   { name: 'Comando', href: '#comando' },
   { name: 'Contato', href: '#contato' },
 ];

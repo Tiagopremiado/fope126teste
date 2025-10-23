@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import MissionSection from './components/MissionSection';
 import ActivitiesSection from './components/ActivitiesSection';
+import BenefitsSection from './components/BenefitsSection';
 import ProjectsSection from './components/ProjectsSection';
 import ImpactSection from './components/ImpactSection';
 import CommandSection from './components/CommandSection';
@@ -20,6 +21,7 @@ function App() {
         <AboutSection />
         <MissionSection />
         <ActivitiesSection />
+        <BenefitsSection />
         <ProjectsSection />
         <ImpactSection />
         <CommandSection />

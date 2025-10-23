@@ -12,6 +12,11 @@ export interface Activity {
   description: string;
 }
 
+export interface Benefit {
+  title: string;
+  description: string;
+}
+
 export interface CommandMember {
   name: string;
   rank: string;
