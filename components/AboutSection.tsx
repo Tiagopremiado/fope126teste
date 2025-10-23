@@ -16,7 +16,7 @@ const AboutSection: React.FC = () => {
             </p>
           </div>
           <div>
-            <img src="https://i.imgur.com/Xgp6wEl.jpeg" alt="Cadetes da FOPE em formação" className="rounded-lg shadow-2xl w-full h-auto object-cover filter grayscale hover:grayscale-0 transition-all duration-500" />
+            <img src="https://i.imgur.com/Xgp6wEl.jpeg" alt="Cadetes da FOPE em formação" className="rounded-lg shadow-2xl w-full h-auto object-cover" />
           </div>
         </div>
       </div>
