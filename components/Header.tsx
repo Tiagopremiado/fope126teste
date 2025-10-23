@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import type { NavLink } from '../types';
 
@@ -6,13 +7,29 @@ const navLinks: NavLink[] = [
   { name: 'Nossa Missão', href: '#missao' },
   { name: 'Atividades', href: '#atividades' },
   { name: 'Benefícios', href: '#beneficios' },
-  { name: 'Galeria', href: 'gallery.html' },
+  { name: 'Galeria', href: '#gallery' },
   { name: 'Comando', href: '#comando' },
   { name: 'Contato', href: '#contato' },
 ];
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  onNavigateToGallery: () => void;
+}
+
+const Header: React.FC<HeaderProps> = ({ onNavigateToGallery }) => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, link: NavLink) => {
+    if (link.name === 'Galeria') {
+      e.preventDefault();
+      onNavigateToGallery();
+      if (isOpen) {
+        setIsOpen(false);
+      }
+    } else if (isOpen) {
+      setIsOpen(false);
+    }
+  };
 
   return (
     <header className="bg-black/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 border-b border-lime-volt/20">
@@ -29,8 +46,7 @@ const Header: React.FC = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  target={link.name === 'Galeria' ? '_blank' : '_self'}
-                  rel={link.name === 'Galeria' ? 'noopener noreferrer' : ''}
+                  onClick={(e) => handleLinkClick(e, link)}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium uppercase tracking-widest font-display transition-colors duration-300"
                 >
                   {link.name}
@@ -68,9 +84,7 @@ const Header: React.FC = () => {
               <a
                 key={link.name}
                 href={link.href}
-                onClick={() => setIsOpen(false)}
-                target={link.name === 'Galeria' ? '_blank' : '_self'}
-                rel={link.name === 'Galeria' ? 'noopener noreferrer' : ''}
+                onClick={(e) => handleLinkClick(e, link)}
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase tracking-widest font-display"
               >
                 {link.name}
