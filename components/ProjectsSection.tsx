@@ -10,7 +10,7 @@ const ProjectsSection: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <img src="https://i.imgur.com/MoS8eNp.jpeg" alt="Brigadista Mirim em treinamento" className="rounded-lg shadow-2xl w-full h-auto object-cover" />
+            <img src="https://i.imgur.com/0HFQfSm.jpeg" alt="Brigadista Mirim em treinamento" className="rounded-lg shadow-2xl w-full h-auto object-cover" />
           </div>
           <div className="text-left">
             <h3 className="text-lg font-display uppercase tracking-widest text-lime-volt">Projetos Especiais</h3>

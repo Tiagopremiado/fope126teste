@@ -8,6 +8,7 @@ import ActivitiesSection from './components/ActivitiesSection';
 import BenefitsSection from './components/BenefitsSection';
 import ProjectsSection from './components/ProjectsSection';
 import ImpactSection from './components/ImpactSection';
+import GalleryCTASection from './components/GalleryCTASection';
 import CommandSection from './components/CommandSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
@@ -24,6 +25,7 @@ function App() {
         <BenefitsSection />
         <ProjectsSection />
         <ImpactSection />
+        <GalleryCTASection />
         <CommandSection />
         <ContactSection />
       </main>

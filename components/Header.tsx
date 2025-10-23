@@ -6,6 +6,7 @@ const navLinks: NavLink[] = [
   { name: 'Nossa Missão', href: '#missao' },
   { name: 'Atividades', href: '#atividades' },
   { name: 'Benefícios', href: '#beneficios' },
+  { name: 'Galeria', href: 'gallery.html' },
   { name: 'Comando', href: '#comando' },
   { name: 'Contato', href: '#contato' },
 ];
@@ -28,6 +29,8 @@ const Header: React.FC = () => {
                 <a
                   key={link.name}
                   href={link.href}
+                  target={link.name === 'Galeria' ? '_blank' : '_self'}
+                  rel={link.name === 'Galeria' ? 'noopener noreferrer' : ''}
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium uppercase tracking-widest font-display transition-colors duration-300"
                 >
                   {link.name}
@@ -66,6 +69,8 @@ const Header: React.FC = () => {
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
+                target={link.name === 'Galeria' ? '_blank' : '_self'}
+                rel={link.name === 'Galeria' ? 'noopener noreferrer' : ''}
                 className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium uppercase tracking-widest font-display"
               >
                 {link.name}

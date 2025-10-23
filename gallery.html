@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria - FOPE Companhia 126°</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'olive-dark': '#3D402D',
+              'olive': '#556B2F',
+              'lime-volt': '#15FF09',
+              'lime-volt-dark': '#12D908',
+            },
+            fontFamily: {
+              'sans': ['Roboto', 'sans-serif'],
+              'display': ['Oswald', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-black text-gray-200 font-sans">
+    <header class="bg-gray-900/80 backdrop-blur-sm py-5 border-b border-lime-volt/20">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+            <h1 class="text-3xl font-display uppercase tracking-wider font-bold text-lime-volt">Galeria de Fotos</h1>
+            <a href="/index.html" class="bg-lime-volt text-black font-bold font-display uppercase tracking-wider py-2 px-6 rounded-sm hover:bg-lime-volt-dark transition-colors duration-300">
+                Voltar
+            </a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12">
+            <p class="max-w-3xl mx-auto text-gray-300 text-lg leading-relaxed">
+                Explore nossos momentos em ação! Cada imagem captura a essência da disciplina, camaradagem e patriotismo que definem a Companhia 126°. Venha ver de perto o dia a dia de nossos treinamentos, eventos e o orgulho de ser FOPE.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            
+            <!-- Imagens da Galeria -->
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+                <img src="https://i.imgur.com/l89Y8l9.jpeg" alt="Foto da galeria FOPE 1" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+                <img src="https://i.imgur.com/526l6Bt.jpeg" alt="Foto da galeria FOPE 2" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+                <img src="https://i.imgur.com/sk1pT2Z.jpeg" alt="Foto da galeria FOPE 3" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+                <img src="https://i.imgur.com/PaIlA9e.jpeg" alt="Foto da galeria FOPE 4" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" />
+            </div>
+             <div class="group overflow-hidden rounded-lg shadow-lg">
+                <img src="https://i.imgur.com/brp1HBI.jpeg" alt="Foto da galeria FOPE 5" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" />
+            </div>
+             <div class="group overflow-hidden rounded-lg shadow-lg">
+                <img src="https://i.imgur.com/RHguzbi.jpeg" alt="Foto da galeria FOPE 6" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+                <img src="https://i.imgur.com/ugkSIJE.jpeg" alt="Foto da galeria FOPE 7" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+                <img src="https://i.imgur.com/pccjoHY.jpeg" alt="Foto da galeria FOPE 8" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+                <img src="https://i.imgur.com/DEztNd9.jpeg" alt="Foto da galeria FOPE 9" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+                <img src="https://i.imgur.com/VNkhrOz.jpeg" alt="Foto da galeria FOPE 10" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" />
+            </div>
+            <div class="group overflow-hidden rounded-lg shadow-lg">
+                <img src="https://i.imgur.com/1EGHWIe.jpeg" alt="Foto da galeria FOPE 11" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300" />
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-lime-volt/20 mt-12">
+      <div class="container mx-auto py-8 px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-sm text-gray-400">&copy; 2024 FOPE Companhia 126°. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script>
+        document.querySelector('footer p').textContent = `© ${new Date().getFullYear()} FOPE Companhia 126°. Todos os direitos reservados.`;
+    </script>
+</body>
+</html>
